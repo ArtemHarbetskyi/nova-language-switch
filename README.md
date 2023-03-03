@@ -4,3 +4,6 @@ This is an extended package to badinansoft/nova-language-switch that adds a coun
 
 ![alt text](https://github.com/ArtemHarbetskyi/nova-language-switch/blob/master/screen/flags.png?raw=true)
 
+
+##Installation
+[https://github.com/badinansoft/nova-language-switch](https://github.com/badinansoft/nova-language-switch)
