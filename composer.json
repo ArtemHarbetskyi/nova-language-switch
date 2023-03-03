@@ -1,5 +1,5 @@
 {
-    "name": "badinansoft/nova-language-switch",
+    "name": "artem-harbetskyi/nova-language-switch",
     "description": "A Laravel Nova package to switch language in your application",
     "keywords": [
         "laravel",
@@ -39,5 +39,5 @@
         "sort-packages": true
     },
     "minimum-stability": "dev",
-    "prefer-stable": true
+    "prefer-stable": false
 }

@@ -17,6 +17,7 @@ class LanguageSwitch extends Tool
                 return [
                     'languages' => config('nova-language-switch.supported-languages'),
                     'current_lang' => app()->getLocale(),
+                    'flags' => config('nova-language-switch.flags'),
                 ];
             }
         ]);

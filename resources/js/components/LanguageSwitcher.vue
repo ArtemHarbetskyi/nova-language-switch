@@ -5,8 +5,18 @@
         class="h-10 w-full hover:text-primary-500"
     >
 
-      <Icon type="language"  />
-      <span class="ml-1 font-bold hidden md:inline">{{selectedDisplay}}</span>
+      <country-flag 
+      v-if="flags.status"
+      :country="getCountryName(selected)" 
+      :rounded="flags.rounded"
+      :shadow="flags.shadow"
+      size='normal'/> 
+
+      <Icon v-if="!flags.status" type="language"  />
+
+      <span class="ml-1 font-bold hidden md:inline">
+      {{selectedDisplay}}
+    </span>
     </DropdownTrigger>
     <template #menu>
       <DropdownMenu>
@@ -18,8 +28,9 @@
                                class="flex items-center hover:bg-gray-100"
                                @click.prevent="changeLang(key)"
             >
-              <span  class="ml-2" v-if="selected!==key">{{value}}</span>
-              <span class="ml-2 font-bold text-primary-500"  v-else>{{value}}</span>
+              <country-flag v-if="flags.status" :country="getCountryName(key)" size='small'/>
+              <span  class="ml-1" v-if="selected!==key">{{value}}</span>
+              <span class="ml-1 font-bold text-primary-500"  v-else>{{value}}</span>
             </DropdownMenuItem>
           </div>
         </template>
@@ -31,7 +42,6 @@
 </template>
 
 <script>
-
 export default {
   name: "LanguageSwitcher",
 
@@ -43,6 +53,10 @@ export default {
         });
       }
     },
+    // fix for country name and localization
+    getCountryName(langName){
+      return langName === 'en' ? 'gb' : langName;
+    }
   }
 
 }

@@ -26,4 +26,15 @@ return [
         'ar'
     ],
 
+    /**
+     * Show country flags?
+     * https://www.npmjs.com/package/vue-country-flag-next
+     * bool
+    */
+    'flags' => [
+        'status' => true,
+        'rounded'=> true,
+        'shadow '=> true
+    ],
+
 ];
