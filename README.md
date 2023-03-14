@@ -1,6 +1,6 @@
 ## A Laravel Nova Tool to add language switcher to your application *+ flag language*
 
-This is an extended package to badinansoft/nova-language-switch that adds a country flag with the name of the language
+This is an extended package to badinansoft/nova-language-switch that adds a country flag with the name of the language (also, added output of the current locale)
 
 ![alt text](https://github.com/ArtemHarbetskyi/nova-language-switch/blob/master/screen/flags.png?raw=true)
 
